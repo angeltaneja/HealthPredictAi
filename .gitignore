@@ -1,0 +1,19 @@
+# Virtual environment
+backend/venv/
+backend/__pycache__/
+backend/data/
+backend/models/
+backend/.env
+
+# Node dependencies
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# IDE configurations and logs
+.gemini/
+.vscode/
+.idea/
+*.log
+.DS_Store
