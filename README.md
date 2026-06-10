@@ -1,124 +1,124 @@
 # HealthPredictAI 🏥
 
-An AI-powered clinical dashboard and Retrieval-Augmented Generation (RAG) assistant designed to predict 30-day hospital readmission risks. The application integrates machine learning pipelines with natural language interfaces to give clinicians predictive risk alerts and conversational access to patient discharge summaries.
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-%23E75A21?style=for-the-badge)](https://xgboost.readthedocs.io/)
+[![Vite](https://img.shields.io/badge/Vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-## 🌟 Key Features
-
-1. **Predictive Risk Assessment**:
-   * Evaluates patient records using a trained **MLP (Multi-Layer Perceptron) Neural Network** pipeline achieving an average cross-validated **ROC-AUC of 0.9733**.
-2. **Explainable AI (XAI)**:
-   * Translates complex model parameters into patient-specific risk factor checklists (e.g., elevated creatinine, comorbidity counts, extended stays) sorted by impact.
-3. **RAG Clinical Assistant**:
-   * Features a sidebar chat assistant that queries patient discharge summaries using vector embeddings, with an offline rule-based fallback if no LLM API key is configured.
-4. **Premium Dark Dashboard**:
-   * A modern, single-page React interface styled with custom CSS variables, glassmorphic layouts, animated probability gauges, registry filters, and responsive grids.
+An **end-to-end full-stack AI/ML health-tech application** that predicts 30-day hospital readmission risk. It features a deep learning model pipeline, local explainable AI (XAI) feature importance tracking, and a Retrieval-Augmented Generation (RAG) assistant for querying clinical charts.
 
 ---
 
-## 🛠️ Tech Stack
+## 📸 Dashboard Interface
 
-* **Backend**: FastAPI, Uvicorn, Scikit-Learn, XGBoost, Pandas, NumPy, Pydantic, Python-dotenv
-* **Frontend**: React (Vite), Vanilla CSS (custom properties & HSL color palette), custom SVG iconography
+![HealthPredictAI Clinical Dashboard](dashboard.png)
 
 ---
 
-## 📂 Project Structure
+## ⚡ Why This Project Catches Recruiter Attention
+
+This project showcases a complete **production-ready AI integration lifecycle**, demonstrating proficiency in:
+* **Rigorous ML Model Selection**: Not just training a single model, but comparing multiple architectures (Neural Networks, Gradient Boosting, Random Forests) through 5-Fold Stratified Cross-Validation.
+* **Explainable AI (XAI) in Action**: Resolving the neural network "black-box" issue by using an auxiliary tree-based classifier (XGBoost) to deliver patient-specific feature importances.
+* **Semantic RAG Search**: Developing a custom vector database parsing unstructured clinical summaries and integrating LLMs (Gemini API) alongside an offline local fallback QA engine.
+* **Full-Stack Orchestration**: Designing a fast asynchronous backend (FastAPI) linked to a custom glassmorphic SPA dashboard (Vite + React) using an API proxy.
+
+---
+
+## 📊 ML Model Selection & Performance Summary
+
+We evaluated three classifier pipelines using **5-Fold Stratified Cross-Validation**. The **Multi-Layer Perceptron (MLP) Neural Network** outperformed other models and was selected for production deployment:
+
+| Model Architecture | Avg Accuracy | Avg ROC-AUC | Avg F1-Score | Status |
+| :--- | :---: | :---: | :---: | :---: |
+| **MLP (Neural Network)** | **92.70%** | **0.9733** | **0.9323** | **🚀 Production Selected** |
+| **XGBoost Classifier** | 90.10% | 0.9608 | 0.9085 | Auxiliary explainability |
+| **Random Forest Classifier** | 85.70% | 0.9489 | 0.8712 | Baseline |
+
+### Global Feature Importances (Calculated via Auxiliary XGBoost)
+1. **Prior Admissions** (21.08% impact)
+2. **Comorbidities** (14.09% impact)
+3. **Length of Stay** (9.60% impact)
+4. **Age** (8.85% impact)
+5. **Discharged to Skilled Nursing Facility** (7.07% impact)
+
+---
+
+## 🛠️ Tech Stack & Architecture
+
+* **Backend**: FastAPI, Uvicorn, Scikit-Learn, XGBoost, Pandas, NumPy, Pydantic
+* **Frontend**: React (Vite), CSS Custom Properties (HSL colors, dark mode, glassmorphism)
+* **Generative AI / RAG**: Gemini API (`text-embedding-004` & `gemini-1.5-flash`), custom Scikit-Learn TF-IDF vector database fallback.
 
 ```text
-healthpredictai/
-├── backend/
-│   ├── data/                 # Generated patient CSV and clinical discharge summaries
-│   ├── models/               # Pickled MLP pipeline and feature importance data
-│   ├── generate_data.py      # Script to generate synthetic medical cohort
-│   ├── train_model.py        # ML training and evaluation script (5-fold CV)
-│   ├── rag_pipeline.py       # Embedding vector database compilation and query engine
-│   ├── main.py               # FastAPI backend server
-│   └── requirements.txt      # Python dependencies
-├── frontend/
-│   ├── src/
-│   │   ├── App.jsx           # Dashboard registry, metrics, and chat logic
-│   │   ├── App.css           # Styling system, variables, layouts, and animations
-│   │   ├── main.jsx          # React entrypoint
-│   │   └── index.css         # Baseline css reset
-│   ├── index.html            # Main HTML wrapper (SEO meta and Inter fonts)
-│   ├── vite.config.js        # Vite config with dev proxy to port 8000
-│   └── package.json          # Node dependencies
-└── README.md                 # Project documentation
+┌────────────────────────┐      REST API      ┌────────────────────────┐
+│     Vite + React       │ ────────────────>  │        FastAPI         │
+│   (Port 5173 Dev)      │ <────────────────  │     (Port 8000 Dev)    │
+└────────────────────────┘                    └───────────┬────────────┘
+            │                                             │
+            ▼                                             ▼
+┌────────────────────────┐                    ┌────────────────────────┐
+│   Glassmorphic SPA     │                    │  - MLP Classifier (ML) │
+│ - Interactive Registry │                    │  - XGBoost (XAI)       │
+│ - Probability Gauge    │                    │  - Vector DB (RAG)     │
+│ - Assistant Chat       │                    └────────────────────────┘
+└────────────────────────┘
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Python 3.10+
-- Node.js v18+ & npm
-
-### 1. Backend Setup & Run
-
-Navigate to the `backend` directory:
+### 1. Backend Service Setup
+Navigate to the backend folder, activate your virtual environment, and install requirements:
 ```bash
 cd backend
-```
-
-Activate the virtual environment (Windows):
-```bash
+# Windows
 .\venv\Scripts\activate
-```
-
-Install dependencies:
-```bash
+# Install Packages
 pip install -r requirements.txt
 ```
 
-Generate patient records & discharge summaries:
+Generate patient records & summaries:
 ```bash
 python generate_data.py
 ```
 
-Train the models & output feature importances:
+Train and pick the best ML model:
 ```bash
 python train_model.py
 ```
 
-Initialize the vector database store:
+Build the custom vector store:
 ```bash
 python rag_pipeline.py
 ```
 
-Start the FastAPI backend server:
+Run the API:
 ```bash
 python main.py
 ```
-*The API is now running locally at `http://127.0.0.1:8000`.*
+*API is live at `http://127.0.0.1:8000`.*
 
-### 2. Frontend Setup & Run
-
-Open a new terminal window, navigate to the `frontend` directory:
+### 2. Frontend Dashboard Setup
+Navigate to the frontend folder, install npm packages, and run:
 ```bash
 cd frontend
-```
-
-Install Node packages:
-```bash
 npm install
-```
-
-Start the Vite development server:
-```bash
 npm run dev
 ```
-*The dashboard will be live at `http://localhost:5173/`.*
+*Vite dev server is live at `http://localhost:5173/`.*
 
 ---
 
-## 📡 API Reference
+## 📡 API Endpoints
 
-* **`GET /api/patients`**: Retrieves the list of patients in the registry.
-* **`GET /api/patients/{patient_id}/risk`**: Runs predictive model inference on the selected patient and returns their readmission probability and top risk factors.
-* **`POST /api/patients/{patient_id}/chat`**: Sends a question about the patient's record to the RAG chart assistant.
+* **`GET /api/patients`**: Returns clinical summaries for the registry list.
+* **`GET /api/patients/{id}/risk`**: Runs model inference and extracts ranked explainable risk factors.
+* **`POST /api/patients/{id}/chat`**: Interfaces user questions with the RAG patient assistant.
 
 ---
 
 ## ⚠️ Disclaimer
-This application is a clinical simulation project utilizing synthetic patient data. It is intended for demonstrative/portfolio purposes and is not certified for real-world diagnostic or medical support workflows.
+This application is a clinical simulation utilizing synthetic patient profiles. It is built strictly for portfolio purposes and should not be used in live diagnostic environments.
