@@ -1,68 +1,122 @@
-# Hi there, I'm Angel Taneja! 👋
+# Hello, World! I'm Angel Taneja 👋 
 
-I am a passionate **Full-Stack AI/ML Engineer** focused on building intelligent web applications, developing machine learning pipelines, and deploying interactive Generative AI solutions.
-
-- 🔭 I’m currently working on building and optimizing production-style AI/ML architectures.
-- 💻 My tech stack focuses on **FastAPI**, **React (Vite)**, and **Scikit-Learn/XGBoost**.
-- ⚙️ I enjoy bridging the gap between data science models and clean, high-fidelity user interfaces.
-- ✉️ Reach out to me: **angeltaneja100@gmail.com**
-
----
-
-## 🛠️ Tech Stack & Skills
-
-### 🧠 Machine Learning & Data Science
-![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat&logo=scikit-learn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-%23E75A21?style=flat)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat&logo=numpy&logoColor=white)
-
-### 🌐 Full-Stack Development
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat&logo=vite&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white)
-
-### 🔧 Tools & Databases
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=flat&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=flat&logo=visual-studio-code&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white)
-
----
-
-## 🚀 Featured Project
-
-### [🏥 HealthPredictAI](https://github.com/angeltaneja/HealthPredictAi)
-An end-to-end clinical workflow system designed to predict 30-day patient readmission risks using clinical data.
-
-* **ML Classifier Pipeline**: Integrates preprocessors with an **MLP (Neural Network)** classifier, achieving a **0.9733 ROC-AUC** score on evaluation.
-* **Explainable AI (XAI)**: Utilizes a secondary tree classifier (XGBoost) to calculate patient-specific feature importances, showing clinicians the exact drivers of a patient's risk.
-* **Custom RAG Assistant**: Allows natural language queries over clinical discharge summaries, utilizing semantic vector embeddings (Gemini embedding API) and custom offline matching rules.
-* **High-Fidelity Dashboard**: Displays patient records, custom gauge graphs, and chat elements in a responsive glassmorphic dark-mode web application (FastAPI + React).
-
----
-
-## 🏆 GitHub Achievements & Trophies
-
-<p align="left">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=angeltaneja&theme=tokyonight&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
-  </a>
-</p>
-
----
-
-## 📈 GitHub Stats & Coding Activity
-
-<div align="left" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
-  <img src="https://github-readme-stats.vercel.app/api?username=angeltaneja&show_icons=true&theme=tokyonight" alt="GitHub Stats" height="180px" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=angeltaneja&layout=compact&theme=tokyonight" alt="Top Languages" height="180px" />
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=7C3AED&width=435&lines=LLM+%26+RAG+Engineer;AI+%2F+ML+Practitioner;Production+MLOps+Engineer" alt="Typing SVG" />
 </div>
 
-<p align="left">
-  <img src="https://komarev.com/normal-badge/?username=angeltaneja&color=blue&style=flat-square" alt="Profile Views Counter" />
-</p>
+---
+
+### 🚀 About Me
+I am an **AI/ML Engineer** specializing in designing production-grade LLM architectures, high-performance RAG pipelines, and deep learning systems. I bridge the gap between academic research (co-authoring a paper on vision foundation models with 150K+ inferences) and shipping highly optimized, user-centric AI products.
+
+* 🎓 **Education:** Master of Computer Applications (MCA) candidate at Chandigarh University (Class of 2026)
+* 💼 **Active Focus:** Deploying high-throughput semantic search, agentic workflows, and edge-intelligence applications.
+* 📍 **Location:** Chandigarh, India
+
+---
+
+### 🛠️ Technical Superpowers
+
+<table>
+  <tr>
+    <td align="center" width="120px"><strong>LLM & RAG</strong></td>
+    <td>
+      <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
+      <img src="https://img.shields.io/badge/LlamaIndex-000000?style=for-the-badge&logo=llamaindex&logoColor=white" />
+      <img src="https://img.shields.io/badge/ChromaDB-0052FF?style=for-the-badge&logo=chroma&logoColor=white" />
+      <img src="https://img.shields.io/badge/FAISS-7C3AED?style=for-the-badge" />
+      <img src="https://img.shields.io/badge/Pinecone-000000?style=for-the-badge" />
+      <img src="https://img.shields.io/badge/Prompt_Engineering-FF6B6B?style=for-the-badge" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Deep Learning</strong></td>
+    <td>
+      <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+      <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+      <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
+      <img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+      <img src="https://img.shields.io/badge/XGBoost-2C5E3B?style=for-the-badge" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>MLOps & Cloud</strong></td>
+    <td>
+      <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+      <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+      <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Core Tech Stack</strong></td>
+    <td>
+      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+      <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
+      <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+      <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
+      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🔥 Featured Projects
+
+#### 🎬 [AI Video Assistant](https://github.com/angeltaneja/AIVEDIOASSISTANT)
+* **Description:** A premium, real-time meeting intelligence dashboard that automates audio ingestion from YouTube, transcribes multi-lingual audio (local Whisper + Sarvam STT), and generates bulleted action items, summaries, and Q&A chat contexts.
+* **Tech Stack:** Python, Streamlit, LangChain, Groq API (Llama 3.3), Sarvam AI API, ChromaDB.
+
+#### 🏥 [MedQueryAI - Clinical Document RAG Engine](https://github.com/angeltaneja/media-query-ai)
+* **Description:** Designed a high-accuracy RAG pipeline over medical documents utilizing custom text-chunking strategies, sentence-transformer embedding indices in ChromaDB, and Claude API. Achieved an **89% retrieval accuracy**.
+* **Tech Stack:** LangChain, ChromaDB, HuggingFace Transformers, Claude API, Streamlit.
+
+#### 📈 [RetailSmartAI - Dynamic Pricing Engine](https://github.com/angeltaneja/retail-smart-ai)
+* **Description:** Built a multimodal pricing algorithm combining sentiment summaries of 50K+ reviews indexed in FAISS with LSTM/CNN outputs into an XGBoost model. Reached **92% price prediction accuracy**.
+* **Tech Stack:** LangChain, FAISS, XGBoost, LSTM, CNN.
+
+---
+
+### 📊 GitHub Stats & Activity
+
+<div align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=angeltaneja&theme=nord&column=7" alt="angeltaneja trophies" width="98%" />
+  </a>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=angeltaneja&show_icons=true&theme=nord&count_private=true" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=angeltaneja&layout=compact&theme=nord" alt="Top Languages" width="48%" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=angeltaneja&theme=nord" alt="GitHub Streak" width="98%" />
+</div>
+
+---
+
+### 📫 Connect with Me
+
+<div align="center">
+  <a href="https://linkedin.com/in/angel-taneja-140b45263" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:angeltaneja100@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/angeltaneja" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</div>
+
+---
+<div align="center">
+  [![](https://visitcount.itsvg.in/api?id=angeltaneja&icon=0&color=0)](https://visitcount.itsvg.in)
+</div>
