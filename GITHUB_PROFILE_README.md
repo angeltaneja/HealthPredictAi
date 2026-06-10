@@ -46,8 +46,23 @@ An end-to-end clinical workflow system designed to predict 30-day patient readmi
 
 ---
 
-## 📈 GitHub Stats
+## 🏆 GitHub Achievements & Trophies
 
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=angeltaneja&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=angeltaneja&theme=tokyonight&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
+  </a>
+</p>
+
+---
+
+## 📈 GitHub Stats & Coding Activity
+
+<div align="left" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
+  <img src="https://github-readme-stats.vercel.app/api?username=angeltaneja&show_icons=true&theme=tokyonight" alt="GitHub Stats" height="180px" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=angeltaneja&layout=compact&theme=tokyonight" alt="Top Languages" height="180px" />
+</div>
+
+<p align="left">
+  <img src="https://komarev.com/normal-badge/?username=angeltaneja&color=blue&style=flat-square" alt="Profile Views Counter" />
 </p>
