@@ -69,6 +69,10 @@ I am an **AI/ML Engineer** specializing in designing production-grade LLM archit
 * **Description:** A premium, real-time meeting intelligence dashboard that automates audio ingestion from YouTube, transcribes multi-lingual audio (local Whisper + Sarvam STT), and generates bulleted action items, summaries, and Q&A chat contexts.
 * **Tech Stack:** Python, Streamlit, LangChain, Groq API (Llama 3.3), Sarvam AI API, ChromaDB.
 
+#### 🏥 [HealthPredictAI - Readmission Risk & Clinical Chart RAG](https://github.com/angeltaneja/HealthPredictAi)
+* **Description:** Developed a clinical intelligence platform predicting 30-day patient readmission risk. Implemented standard preprocessors with an MLP classifier (0.9733 ROC-AUC) and an auxiliary XGBoost pipeline for explainable feature impact metrics. Includes an integrated RAG chart assistant.
+* **Tech Stack:** FastAPI, React (Vite), Scikit-Learn, XGBoost, Pandas, NumPy, Gemini Embedding API.
+
 #### 🏥 [MedQueryAI - Clinical Document RAG Engine](https://github.com/angeltaneja/media-query-ai)
 * **Description:** Designed a high-accuracy RAG pipeline over medical documents utilizing custom text-chunking strategies, sentence-transformer embedding indices in ChromaDB, and Claude API. Achieved an **89% retrieval accuracy**.
 * **Tech Stack:** LangChain, ChromaDB, HuggingFace Transformers, Claude API, Streamlit.
