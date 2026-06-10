@@ -1,10 +1,10 @@
 # Hi there, I'm Angel Taneja! 👋
 
-I am a **Computer Science Student & Aspiring AI/ML Engineer** passionate about building intelligent web systems, developing data science pipelines, and deploying interactive Generative AI solutions.
+I am a passionate **Full-Stack AI/ML Engineer** focused on building intelligent web applications, developing machine learning pipelines, and deploying interactive Generative AI solutions.
 
-- 🎓 Currently pursuing my degree in Computer Science, focusing on Artificial Intelligence and Machine Learning.
-- 💻 My favorite stack includes **FastAPI**, **React (Vite)**, and **Scikit-Learn / XGBoost**.
-- ⚙️ I enjoy bridging the gap between academic ML theory and building high-fidelity user interfaces.
+- 🔭 I’m currently working on building and optimizing production-style AI/ML architectures.
+- 💻 My tech stack focuses on **FastAPI**, **React (Vite)**, and **Scikit-Learn/XGBoost**.
+- ⚙️ I enjoy bridging the gap between data science models and clean, high-fidelity user interfaces.
 - ✉️ Reach out to me: **angeltaneja100@gmail.com**
 
 ---
