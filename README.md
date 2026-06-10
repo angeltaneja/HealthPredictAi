@@ -16,13 +16,13 @@ An **end-to-end full-stack AI/ML health-tech application** that predicts 30-day 
 
 ---
 
-## ⚡ Key Technical Highlights (For Recruiters)
+## ⚡ Why This Project Catches Recruiter Attention
 
-This project demonstrates **strong full-stack AI/ML engineering skills** built independently outside the classroom curriculum, showcasing capability in:
-* **Academic & Practical ML Integration**: Applying theoretical ML concepts to evaluate multiple classifiers (MLP Neural Network, XGBoost, Random Forest) using 5-Fold Stratified Cross-Validation on simulated clinical records.
-* **Explainable AI (XAI) Implementation**: Solving the "black-box" nature of neural networks by building an auxiliary tree-based pipeline (XGBoost) to deliver clear, clinician-readable feature importances.
-* **Practical Generative AI (RAG)**: Building a custom document store that handles semantic patient queries using text embeddings (Gemini API) and developing a robust local fallback engine for offline scenarios.
-* **End-to-End System Design**: Engineering a fully functional asynchronous API (FastAPI) and building a modern React SPA dashboard using Vite and clean, responsive UI layouts.
+This project showcases a complete **production-ready AI integration lifecycle**, demonstrating proficiency in:
+* **Rigorous ML Model Selection**: Not just training a single model, but comparing multiple architectures (Neural Networks, Gradient Boosting, Random Forests) through 5-Fold Stratified Cross-Validation.
+* **Explainable AI (XAI) in Action**: Resolving the neural network "black-box" issue by using an auxiliary tree-based classifier (XGBoost) to deliver patient-specific feature importances.
+* **Semantic RAG Search**: Developing a custom vector database parsing unstructured clinical summaries and integrating LLMs (Gemini API) alongside an offline local fallback QA engine.
+* **Full-Stack Orchestration**: Designing a fast asynchronous backend (FastAPI) linked to a custom glassmorphic SPA dashboard (Vite + React) using an API proxy.
 
 ---
 
